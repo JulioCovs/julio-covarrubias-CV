@@ -65,6 +65,9 @@ textarea {
 
     <div class="container">
         <h2>Contacto</h2>
+            <style>
+    color: black;
+    </style>
         <form>
             <table>
                 <tr>
