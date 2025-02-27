@@ -9,7 +9,7 @@
         body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #6a0dad, #ff0000);
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px;
     transition: background 0.5s;
