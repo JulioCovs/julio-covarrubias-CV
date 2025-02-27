@@ -49,9 +49,6 @@ textarea {
 </head>
 
 <body>
-    <style>
-    color: white;
-    </style>
     <div class="container">
         <h1>Bienvenido a mi CV</h1>
         <p>Hola, soy Julio Covarrubias, un desarrollador web apasionado.</p>
@@ -62,29 +59,21 @@ textarea {
         <p>Habilidades: HTML, CSS, JavaScript, React, Node.js</p>
         <button onclick="mostrarAlerta()">¡Haz clic para saber más!</button>
     </div>
-
     <div class="container">
         <h2>Contacto</h2>
-            <style>
-    color: black;
-    </style>
         <form>
             <table>
                 <tr>
-                    <td><label for="nombre">Nombre:</label></td>
                     <td><input type="text" id="nombre" name="nombre" placeholder="Introducir nombre y apellido"></td>
                 </tr>
                 <tr>
-                    <td><label for="correo">Correo Electrónico:</label></td>
                     <td><input type="email" id="correo" name="correo" placeholder="Introducir correo"></td>
                 </tr>
                 <tr>
-                    <td><label for="telefono">Número de Celular:</label></td>
                     <td><input type="tel" id="telefono" name="telefono" placeholder="Introducir número"></td>
                 </tr>
                 <tr>
-                    <td><label for="mensaje">Descripción:</label></td>
-                    <td><textarea id="mensaje" name="mensaje" placeholder="Encantado de ayudarte" cols="50" rows="6"></textarea></td>
+                    <td><textarea id="mensaje" name="mensaje" placeholder="Descripción de su proyecto, Encantado de ayudarte" cols="50" rows="6"></textarea></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button type="submit">Enviar</button></td>
@@ -92,17 +81,14 @@ textarea {
             </table>
         </form>
     </div>
-
     <script>
         document.querySelector("form").addEventListener("submit", function(event) {
             event.preventDefault();
-    
             // Obtener los datos del formulario
             let nombre = document.getElementById("nombre").value;
             let correo = document.getElementById("correo").value;
             let telefono = document.getElementById("telefono").value;
             let mensaje = document.getElementById("mensaje").value;
-    
             // Crear el XML
             let xmlData = `<?xml version="1.0" encoding="UTF-8"?>
     <contactos>
@@ -113,7 +99,6 @@ textarea {
             <mensaje>${mensaje}</mensaje>
         </contacto>
     </contactos>`;
-    
             // Crear un Blob para descargar el archivo XML
             let blob = new Blob([xmlData], { type: "application/xml" });
             let a = document.createElement("a");
@@ -122,18 +107,14 @@ textarea {
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
-
             // Limpiar los campos del formulario
             document.getElementById("nombre").value = "";
             document.getElementById("correo").value = "";
             document.getElementById("telefono").value = "";
             document.getElementById("mensaje").value = "";
-
-    
             alert("Datos guardados en XML.");
         });
     </script>    
-
     <script>
         function mostrarAlerta() {
             alert("¡Gracias por visitar mi CV! Si te interesa, contáctame.");
