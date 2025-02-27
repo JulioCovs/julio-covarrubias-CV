@@ -1,10 +1,51 @@
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi CV</title>
     <link rel="stylesheet" href="styles.css">
+        <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a0dad, #ff0000);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.5s;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+.container:hover {
+    transform: scale(1.05);
+}
+button {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #6a0dad;
+}
+
+textarea {
+    width: 100%;  /* Hace que ocupe todo el ancho disponible */
+    height: 150px; /* Ajusta la altura según lo necesites */
+    padding: 8px;
+    font-size: 16px;
+}
+        </style>
 </head>
 <body>
     <div class="container">
