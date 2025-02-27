@@ -47,6 +47,7 @@ textarea {
 }
         </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Mi CV</h1>
