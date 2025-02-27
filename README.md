@@ -49,8 +49,11 @@ textarea {
 </head>
 
 <body>
+    <style>
+    color: white;
+    </style>
     <div class="container">
-        <h1>Mi CV</h1>
+        <h1>Bienvenido a mi CV</h1>
         <p>Hola, soy Julio Covarrubias, un desarrollador web apasionado.</p>
         <p>Experiencia: +3 años en desarrollo frontend. <br>
             Hace 6 meses empece en el desarrollo backend y actualmente me encuentro en desarrollo
